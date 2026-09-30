@@ -8,13 +8,13 @@ be taken from dataset validation and reproducible training to a browser-based wo
 ## Demo
 
 <p align="center">
-  <a href="demo_images/demo_timbersight.mp4">
+  <a href="https://hilfritz.github.io/timbersight-wood-defect-detection/demo_images/demo_timbersight.mp4">
     <img src="demo_images/demo_thumbnail.svg" alt="Play the 25-second TimberSight demo" width="300">
   </a>
 </p>
 
 <p align="center">
-  <strong>▶ <a href="demo_images/demo_timbersight.mp4">Play Video Demonstration</a></strong><br>
+  <strong>▶ <a href="https://hilfritz.github.io/timbersight-wood-defect-detection/demo_images/demo_timbersight.mp4">Play Video Demonstration</a></strong><br>
   
 </p>
 
