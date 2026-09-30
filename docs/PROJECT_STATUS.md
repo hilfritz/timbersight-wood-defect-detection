@@ -15,7 +15,7 @@ results reproduced from versioned configurations and saved evaluation outputs.
 | Camera and API guide | Complete | [`WEB_APP.md`](../WEB_APP.md) |
 | Automated tests and CI | Complete | [`tests/`](../tests) and [`.github/workflows/ci.yml`](../.github/workflows/ci.yml) |
 | Detection examples | Complete | [`demo_images/`](../demo_images) |
-| Short demo video | Complete | [`demo2_polished.mp4`](../demo_images/demo2_polished.mp4) |
+| Short demo video | Complete | [`demo_timbersight.mp4`](../demo_images/demo_timbersight.mp4) |
 
 ## Future additions
 

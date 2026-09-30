@@ -1,18 +1,24 @@
 # TimberSight
 
-**Real-time wood-knot detection from a camera or uploaded image.**
+Real-time wood-knot detection from a camera or uploaded image that identifies whether wood condition is normal, contains dead knots or live knots.
 
-TimberSight is an end-to-end computer-vision system by
-**Hilfritz Camallere**. It demonstrates how an object-detection experiment can
-be taken from dataset validation and reproducible training to a browser-based
-inspection application with measured results and documented limitations.
+TimberSight is an end-to-end computer-vision system. It demonstrates how object-detection experiment can
+be taken from dataset validation and reproducible training to a browser-based wood inspection application that measures real-time results.
 
-[![Watch the 25-second TimberSight demo](demo_images/01_live_knot_evaluated.jpg)](demo_images/demo2_polished.mp4)
+## Demo
 
-**[Watch the 25-second demo](demo_images/demo2_polished.mp4)** — camera input,
-continuous inspection, bounding-box overlays and live inference results.
+<p align="center">
+  <a href="demo_images/demo_timbersight.mp4">
+    <img src="demo_images/demo_thumbnail.svg" alt="Play the 25-second TimberSight demo" width="300">
+  </a>
+</p>
 
-## Results at a glance
+<p align="center">
+  <strong>▶ <a href="demo_images/demo_timbersight.mp4">Play Video Demonstration</a></strong><br>
+  
+</p>
+
+## Results
 
 The Faster R-CNN baseline was selected using validation performance and then
 evaluated once on the untouched 229-image test split.
@@ -29,7 +35,7 @@ positives from knot-free images. These figures are not COCO AP50:95 and are not
 claims of production-line performance. See [the complete results](docs/RESULTS.md)
 and [model card](MODEL_CARD.md).
 
-## What this project demonstrates
+## Project Uses
 
 - **Computer vision:** two-class object detection with PyTorch, TorchVision and
   a Faster R-CNN MobileNetV3-FPN model.
@@ -217,5 +223,4 @@ robustness testing, confidence calibration, monitoring and safe failure modes.
 
 ## Author
 
-**Hilfritz Camallere** — Master of Data Analytics and software engineer focused
-on computer vision, machine learning and production application development.
+**Hilfritz Camallere** — Master of Data Analytics and software engineer.
