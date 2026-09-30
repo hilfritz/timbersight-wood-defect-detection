@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#16251d">
+    <title>TimberSight Wood Inspection</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="brand-mark" aria-hidden="true">TS</div>
+        <div>
+          <p class="eyebrow">Computer vision inspection</p>
+          <h1>TimberSight</h1>
+          <p class="subtitle">Photograph a wood surface to locate and classify visible knots.</p>
+        </div>
+      </header>
+
+      <section class="workspace">
+        <div class="viewer">
+          <div class="viewer-bar">
+            <span id="viewer-title">Camera preview</span>
+            <span class="status" id="status">Ready</span>
+          </div>
+          <div class="stage" id="stage">
+            <video id="camera" autoplay playsinline muted></video>
+            <canvas id="result" hidden></canvas>
+            <canvas id="overlay" hidden></canvas>
+            <div class="empty" id="empty">
+              <span class="camera-icon" aria-hidden="true"></span>
+              <strong>Start the camera or select a photo</strong>
+              <span>Use a clear, well-lit view of the wood surface.</span>
+            </div>
+          </div>
+          <div class="controls">
+            <button class="button secondary" id="camera-button">Start camera</button>
+            <button class="button primary" id="capture-button" disabled>Capture &amp; inspect</button>
+            <button class="button live-toggle" id="live-button" disabled>Start live</button>
+            <label class="button secondary file-button">
+              Select photo
+              <input id="file-input" type="file" accept="image/*" capture="environment">
+            </label>
+          </div>
+          <p class="error" id="error" role="alert" hidden></p>
+        </div>
+
+        <aside>
+          <p class="eyebrow">Inspection result</p>
+          <div class="summary">
+            <strong id="total">—</strong>
+            <span>defects detected</span>
+          </div>
+          <div class="metrics">
+            <div><span>Live knots</span><strong id="live-count">—</strong></div>
+            <div><span>Dead knots</span><strong id="dead-count">—</strong></div>
+            <div><span>Model time</span><strong id="latency">—</strong></div>
+            <div><span>Live rate</span><strong id="fps">—</strong></div>
+            <div><span>Compute</span><strong id="device">—</strong></div>
+          </div>
+          <label class="threshold-label" for="threshold">
+            Confidence threshold <strong id="threshold-value">50%</strong>
+          </label>
+          <input id="threshold" type="range" min="20" max="90" value="50" step="5">
+          <div class="legend">
+            <span><i class="live"></i>Live knot</span>
+            <span><i class="dead"></i>Dead knot</span>
+          </div>
+          <p class="notice">Screening aid only. Final quality decisions should follow your inspection standard.</p>
+        </aside>
+      </section>
+    </main>
+    <script src="/app-realtime.js" defer></script>
+  </body>
+</html>

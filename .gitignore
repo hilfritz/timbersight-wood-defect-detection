@@ -1,0 +1,28 @@
+.DS_Store
+.venv/
+.cache/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+.runtime/
+
+# Raw data and generated artifacts must not be committed.
+data/raw/
+data/processed/
+artifacts/
+runs/
+models/
+*.pt
+*.pth
+*.onnx
+
+# Keep only the polished project demo and final evaluated examples in Git.
+demo_images/demo.mp4
+demo_images/demo2.mov
+demo_images/demo_polished_hilfritz.mp4
+demo_images/video_assets/

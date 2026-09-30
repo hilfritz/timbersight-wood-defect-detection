@@ -1,0 +1,106 @@
+{
+  "01_live_knot": {
+    "source": "/Users/fritz/Documents/Work/TSManufacturing/VNWoodKnot A High-Quality Image Dataset for Wood K/VNWoodKnot/test/1/IMG_4192.jpg",
+    "dataset_split": "test",
+    "ground_truth_objects": 1,
+    "image": {
+      "width": 1500,
+      "height": 1500
+    },
+    "detections": [
+      {
+        "class_id": 1,
+        "label": "live knot",
+        "confidence": 0.99,
+        "box": [
+          416.23,
+          434.91,
+          1031.05,
+          942.3
+        ]
+      }
+    ],
+    "counts": {
+      "live knot": 1,
+      "dead knot": 0
+    },
+    "total": 1,
+    "latency_ms": 66.7,
+    "device": "cpu"
+  },
+  "02_dead_knot": {
+    "source": "/Users/fritz/Documents/Work/TSManufacturing/VNWoodKnot A High-Quality Image Dataset for Wood K/VNWoodKnot/test/2/img_3757.jpg",
+    "dataset_split": "test",
+    "ground_truth_objects": 1,
+    "image": {
+      "width": 1500,
+      "height": 1500
+    },
+    "detections": [
+      {
+        "class_id": 2,
+        "label": "dead knot",
+        "confidence": 0.9986,
+        "box": [
+          638.21,
+          618.68,
+          930.1,
+          951.42
+        ]
+      }
+    ],
+    "counts": {
+      "live knot": 0,
+      "dead knot": 1
+    },
+    "total": 1,
+    "latency_ms": 64.2,
+    "device": "cpu"
+  },
+  "03_challenging_knot": {
+    "source": "/Users/fritz/Documents/Work/TSManufacturing/VNWoodKnot A High-Quality Image Dataset for Wood K/VNWoodKnot/test/2/img_4670.jpg",
+    "dataset_split": "test",
+    "ground_truth_objects": 1,
+    "image": {
+      "width": 1500,
+      "height": 1500
+    },
+    "detections": [
+      {
+        "class_id": 2,
+        "label": "dead knot",
+        "confidence": 0.6229,
+        "box": [
+          176.19,
+          575.15,
+          920.74,
+          1410.81
+        ]
+      }
+    ],
+    "counts": {
+      "live knot": 0,
+      "dead knot": 1
+    },
+    "total": 1,
+    "latency_ms": 65.2,
+    "device": "cpu"
+  },
+  "04_knot_free": {
+    "source": "/Users/fritz/Documents/Work/TSManufacturing/VNWoodKnot A High-Quality Image Dataset for Wood K/VNWoodKnot/test/0/IMG_5022.jpg",
+    "dataset_split": "test",
+    "ground_truth_objects": 0,
+    "image": {
+      "width": 1500,
+      "height": 1500
+    },
+    "detections": [],
+    "counts": {
+      "live knot": 0,
+      "dead knot": 0
+    },
+    "total": 0,
+    "latency_ms": 63.7,
+    "device": "cpu"
+  }
+}

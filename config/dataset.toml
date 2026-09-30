@@ -1,0 +1,18 @@
+# Paths are resolved relative to this configuration file.
+dataset_root = "../../VNWoodKnot A High-Quality Image Dataset for Wood K/VNWoodKnot"
+splits = ["train", "validation", "test"]
+
+# The archive uses image-category folders that differ from YOLO detection IDs.
+[image_categories]
+"0" = "knot_free"
+"1" = "live_knot"
+"2" = "dead_knot"
+
+[detection_classes]
+"0" = "live_knot"
+"1" = "dead_knot"
+
+[category_detection_class]
+"1" = 0
+"2" = 1
+
